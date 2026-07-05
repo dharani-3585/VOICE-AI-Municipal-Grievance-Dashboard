@@ -1,116 +1,39 @@
- southeast1.run.app**
-# V.O.I.C.E. AI: Municipal Citizen Grievance Analytics Dashboard 🏛️🗣️
+# V.O.I.C.E. AI: Municipal Citizen Grievance Analytics Platform (Madurai)
 
-👉 **[Live Production Web App Dashboard 🌐](https://v-o-i-c-e-ai-municipal-citizen-grievance-analytic-16396859728.asia- 
+An AI-powered, voice-optimized citizen grievance ingestion, semantic triage, and cognitive extraction dashboard built to streamline public works coordination and automated risk assessment workflows for the Madurai Municipal Corporation.
 
-🚀 **Voice-Optimized Ingestion & Cognitive Extraction (V.O.I.C.E.) Platform** is a highly modern, production-grade analytics suite engineered specifically for the **Madurai Municipal Corporation**. It acts as a cognitive gateway, transforming unstructured, multilingual, and spoken regional dialect citizen complaints (mixes of Tamil, English, and regional colloquialisms) into structured, prioritized, and sanitized records optimized for GIS dispatch and BigQuery pipeline analytics.
-
----
-
-## 🌟 Project Overview & Target Solution
-
-In major municipal corporations like Madurai, traditional grievance registration systems (such as online forms or rigid interactive voice response systems) fail to capture the urgent needs of a diverse, mobile, and dialect-dependent population. Often, citizens dictate issues in a hybrid language format (*"Mattuthavani entrance road-la severe pothole collapse. Accidents block risk very high..."*) containing critical geographical clues, varying distress parameters, and private confidential information (PII).
-
-**V.O.I.C.E. AI** bridges this gap through a unified processing system:
-* **Target Audience:** Madurai Municipal administrative operators, zone officers, and city GIS dispatch dispatchers.
-* **Problem Solved:** Eradicates the manual labor of categorizing unstructured, multilingual voice and text complaints, dynamically masking sensitive private citizen info, and providing real-time data streaming indicators.
-* **Geographical Mapping:** Full zone tracking specifically integrated around Madurai's key hubs: *Mattuthavani, Periyar, Goripalayam, Arappalayam, and Anna Nagar*.
+## 🌐 Production Live Demo
+👉 **[Click Here to Access the Live Platform Deployment]( https://v-o-i-c-e-ai-municipal-citizen-grievance-analytic-16396859728.asia-southeast1.run.app/)**
 
 ---
 
-## 🛠️ Core Technical Architecture & Tech Stack
+## 🚀 The Core Civic Problem
+Municipal governance platforms frequently struggle with adoption and processing backlogs because of an inherent design flaw: they rely on rigid, manual text-entry workflows. This layout presents an immediate accessibility barrier for elderly, non-technical, or multi-lingual semi-literate citizens who communicate natively in localized dialects.
 
-```
- ┌──────────────────────┐      ┌────────────────────────┐      ┌─────────────────────────┐
- │   Citizen Input      │ ───> │  V.O.I.C.E. AI Engine  │ ───> │  Secure Cloud Analytics │
- │ (Tamil/Eng Dialects) │      │ (PII Scrub/Translation)│      │  (BigQuery & GIS Maps)  │
- └──────────────────────┘      └────────────────────────┘      └─────────────────────────┘
-```
+Furthermore, administrative routing offices fail to parse, categorize, and prioritize the massive influx of unstructured data manually. Without localized severity mapping and immediate visual evidence of hazard escalation patterns, crucial public work repairs (such as critical potholes, road structural damage, or sanitation failures) remain buried under a mountain of static text lines.
 
-The application leverages a robust full-stack architecture ensuring speed, precision, and enterprise compliance:
+## 💡 The V.O.I.C.E. AI Solution Architecture
+Our platform decouples localized grievance intake from database structure optimization through a 3-layer smart city framework:
 
-| Component | Technology | Description |
-| :--- | :--- | :--- |
-| **Frontend UI** | React 19, Tailwind CSS v4, Motion | Highly modern corporate slate theme, fluid voice-wave equalizers, and real-time dashboard telemetry. |
-| **Parsing & LLM** | Google Gemini API (Gemini Pro) | Multilingual translation, sentiment parsing, and municipal category classification. |
-| **PII Protection** | Python-style Regex Processing | Automated scrubbing of phone numbers, emails, and address fragments prior to storage. |
-| **Data Warehouse** | Google BigQuery | Standardized storage schema with flashing `SUCCESS_LOGGED` telemetry payloads. |
-| **Build System** | Vite, Esbuild, Node CJS | Lightweight bundler for fast loading and low container cold-start delay. |
+1. **Cognitive Parsing & Language Normalization:** Employs advanced **Gemini Models** to ingest raw, non-standard localized Tamil-English code-mixed dialects, performing automatic structural schema generation and semantic context extraction.
+2. **Enterprise Cloud Streaming Data Warehouse:** Forwards clean, parsed telemetry fields straight into an active **Google BigQuery** database cluster, facilitating real-time administrative search, spatial grouping, and multi-ward severity triage tracking.
+3. **Predictive Simulation Modeling (Veo Engine):** Injects cutting-edge **Google Veo Image-to-Video models** to transform simple civic hazard snapshots (e.g., localized sanitation hazards or road potholes) into simulated motion sequences, visually projecting risk escalations to prompt faster executive action.
 
 ---
 
-## ⚡ Main Core Features
-
-### 1. Unstructured Code-Mix Dialect Parsing
-Processes raw spoken citizen audio transcripts and texts that interlace Tamil words and English phonetics. V.O.I.C.E. AI interprets context, extracts core complaints, and outputs pristine English translations.
-
-### 2. Automatic Zone Mapping & GIS Slicing
-Recognizes and parses core location references in Madurai (e.g. *Mattuthavani entrance*, *Goripalayam signal*) to instantly assign the complaint to its appropriate administrative zone bounds.
-
-### 3. PII Masking & Privacy Scrubbing
-Enterprise-grade compliance module that filters telephone numbers, mobile codes (e.g. `+91`), or system credentials, replacing them with standard confidential tokens (`[REDACTED_PHONE_NUMBER_CONFIDENTIAL]`).
-
-### 4. Real-time Telemetry & Ingestion Dashboard
-An immersive corporate layout tracking key metrics:
-* **Total Grievances Logged**
-* **Critical Actions Required**
-* **PII Safeguard Status**
-* **BigQuery Sync Backlog Lag**
+## 🛠️ System Technology Stack
+- **Application Engine:** React, TypeScript, Vite, Tailwind CSS Layouts
+- **Artificial Intelligence Orchestration:** Gemini API (Google AI Studio Shared Environment)
+- **Data Infrastructure Warehouse:** Google BigQuery Real-Time Telemetry Pipeline
+- **Visual Simulation Pipeline:** Google Veo Engine Framework
 
 ---
 
-## 🚀 Step-by-Step Installation & Local Setup
+## ⚙️ Architecture Constraints & Local Setup
 
-### Prerequisites
-* **Node.js** (v18 or higher)
-* **npm** (v9 or higher)
-* **Google Gemini API Key** (Configured in your environment)
-
-### 1. Clone the Repository
+### 1. Repository Setup & Dependencies
+Clone the remote repository layer and compile the dependency trees locally:
 ```bash
-git clone https://github.com/your-username/voice-ai-municipal-dashboard.git
-cd voice-ai-municipal-dashboard
-```
-
-### 2. Configure Environment Variables
-Create a `.env` file in the root directory:
-```env
-# Google Gemini Credentials
-GEMINI_API_KEY="your_gemini_api_key_here"
-
-# App URL Configuration
-APP_URL="http://localhost:3000"
-```
-
-### 3. Install Dependencies
-Install all production and devDependencies specified in the manifest:
-```bash
+git clone [https://github.com/voice-ai-municipal-dashboard-madurai.git](https://github.com/voice-ai-municipal-dashboard-madurai.git)
+cd voice-ai-municipal-dashboard-madurai
 npm install
-```
-
-### 4. Run the Development Server
-Launch the local Express-Vite development server (mapped to port 3000):
-```bash
-npm run dev
-```
-Open [http://localhost:3000](http://localhost:3000) in your web browser to view the application.
-
-### 5. Build for Production
-To bundle and compile the server code into an optimized bundle:
-```bash
-npm run build
-npm start
-```
-
----
-
-## 🏛️ Madurai Corporation Governance Alignment
-This system is designed in compliance with modern smart city mandates, matching administrative workflows for localized action units:
-* 🚧 **Roads & Highways:** Mattuthavani Zone road maintenance crews.
-* 🧹 **Sanitation & Waste:** Swachh Bharat municipal cleaning coordinators.
-* ⚡ **Electrical:** Streetlight grid inspectors.
-* 💧 **Water Supply:** Engineering division distribution units.
-
----
-
-*Engineered by **V.O.I.C.E. AI Systems** for the Madurai Municipal Corporation Smart City Hub.*
